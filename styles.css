@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.644); /*Можно поменять цвет фона*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+.square {
+  width: 26px;
+  height: 26px;
+  background-color: rgb(29, 29, 29); /*Можно поменять цвет клетки*/
+  margin: 2px;
+  transition: 1s; /*Скорость смены цвета квадрата*/
+}
+.square:hover {
+  transition-duration: 0s;
+}
